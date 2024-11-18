@@ -104,7 +104,7 @@ abstract public class Guide extends BlockHelperImpl {
             }
 
             try {
-                if (state1.get(property) != state2.get(property)) {
+                if (!state1.get(property).equals(state2.get(property))) {
                     return false;
                 }
             } catch (Exception e) {
